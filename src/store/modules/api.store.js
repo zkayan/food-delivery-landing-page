@@ -21,7 +21,8 @@ const actions = {
   loadApi({ commit }) {
     axios.get(`https://6059fb9db11aba001745d43f.mockapi.io/api/v1/cards`)
       .then(response => {
-        commit('setApi', response)
+        console.log(response.data);
+        commit('setApi', response.data)
       })
   },
 }
@@ -35,7 +36,7 @@ const mutations = {
     })
   },
   setApi(state, data) {
-    state.movies = data
+    state.api = data
   },
 }
 

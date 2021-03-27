@@ -6,3 +6,14 @@ body{
     text-align: center;
     color: #4b5c6b;
 }
+img{
+    max-width: 100%;
+}
+
+@media(min-width: 768px){
+    .card-api:nth-child(odd){
+        .img-card{
+            order: -1;
+        }
+    }
+}
